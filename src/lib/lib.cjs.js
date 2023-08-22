@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var _=require("react");exports.AGGridTestHarness=function(e){var n=e.gridId,i=e.children;_.useEffect((function(){window.__AG_GRID_TEST__=window.__AG_GRID_TEST__||{};return function(){window.isE2E&&window.__AG_GRID_TEST__[n]&&delete window.__AG_GRID_TEST__[n]}}),[]);var r=e.children,o=r.onGridReady,d=r.classNames,t={onGridReady:function(_){o&&o(_),window.isE2E&&(window.__AG_GRID_TEST__[n]=_)},className:"".concat(d," ").concat(n)};return _.cloneElement(i,t)};
+//# sourceMappingURL=lib.cjs.js.map

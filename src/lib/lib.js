@@ -1,0 +1,2 @@
+import{useEffect as _,cloneElement as n}from"react";var i=function(i){var o=i.gridId,d=i.children;_((function(){window.__AG_GRID_TEST__=window.__AG_GRID_TEST__||{};return function(){window.isE2E&&window.__AG_GRID_TEST__[o]&&delete window.__AG_GRID_TEST__[o]}}),[]);var r=i.children,w=r.onGridReady,c=r.classNames,e="".concat(c," ").concat(o);return n(d,{onGridReady:function(_){w&&w(_),window.isE2E&&(window.__AG_GRID_TEST__[o]=_)},className:e})};export{i as AGGridTestHarness};
+//# sourceMappingURL=lib.js.map

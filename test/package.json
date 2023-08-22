@@ -1,0 +1,24 @@
+{
+  "name": "ag-grid-testable-playwright-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npx playwright install",
+    "test": "npx playwright test"
+  },
+  "keywords": [
+    "playwright",
+    "ag-grid",
+    "testing",
+    "test util"
+  ],
+  "author": "Joel Carras, Eoin Reilly",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.37.0"
+  },
+  "dependencies": {
+    "ag-grid-community": "^29.1.0"
+  }
+}
