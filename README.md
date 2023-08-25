@@ -1,13 +1,5 @@
 # `ag-grid-playwright`
-This package lets you test ag-grid using Playwright in a simple, consistent, and extensive way. You can test simple rows and columns or extend it to test ag-grid from playwright in it's entirety.
-
-Read more about the motivation for this plugin [here](#motivation).
-
-## Installation
-Requires React 18
-```sh
-npm install ag-grid-playwright
-```
+Test ag-grid using Playwright in a simple, consistent, and extensive way. This library lets you test simple rows and columns or extend it to test ag-grid from playwright in it's entirety.
 
 ## Usage
 Wrap your React ag-grid with AGGridTestHarness and give it a unique gridId.
@@ -28,6 +20,23 @@ Your test code has access to rows and columns with one call from ag-grid api or 
   // from rendered dom
   const agGridDomRows = await page.evaluate(() => window.agGrid.getDomRows('my-grid-id'));
   const agGridDomColumns = await page.evaluate(() => window.agGrid.getDomColumns('my-grid-id'));
+```
+
+# Example Use Cases
+- You need a simple way to access the rows and columns of an ag-grid.
+- You have an ag-grid with a master detail panel and you need to test the contents of your detail panel is rendered as you expect after expanding a row.
+- You want to expand a row group to check the rendered rows.
+- You need to do something programmically in the ag-grid api and then test the results of your application.
+
+Read more about the motivation for this plugin [here](#motivation).
+
+## Requirements
+- ***React 18*** For now examples are for React 18. However, more examples can be added to cover all the frameworks that ag-grid supports pure JavaScript, Vue, Angular, and Solid.
+- ***ag-grid 30*** While this has been tested with ag-grid 18 prior version are likely to be compatiable. Also note this library has a dependency on the internal api of ag-grid
+
+## Installation
+```sh
+npm install ag-grid-playwright
 ```
 
 ## Example

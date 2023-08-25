@@ -1,13 +1,14 @@
 {
   "name": "ag-grid-playwright",
-  "version": "1.0.9",
+  "version": "1.1.2",
   "description": "Test ag-grid using Playwright in a simple, consistent, and extensive way. You can test simple rows and columns or extend it to test ag-grid from playwright in it's entirety including ag-grid enterprise.",
   "main": "lib/lib.cjs.js",
   "module": "lib/lib.js",
   "types": "lib/lib.d.ts",
   "type": "module",
   "scripts": {
-    "build": "cp ./src/aggrid-test-util.js ./lib/aggrid-test-util.js && rollup -c && cp ../README.md ../src/README.md",
+    "clean": "find lib -mindepth 1 -delete",
+    "build": "npm run clean && cp ./src/aggrid-test-util.js ./lib/aggrid-test-util.js && rollup -c && cp ../README.md ../src/README.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joel Carras, Eoin Reilly",
@@ -38,5 +39,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/LSEG/ag-grid-playwright.git"
-  }
+  },
+  "license": "MIT"
 }
